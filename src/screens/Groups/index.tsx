@@ -1,12 +1,12 @@
-import {Text, View } from 'react-native';
+import {View } from 'react-native';
 
+import { Header } from '../../components/Header';
 import { styles } from './style';
-import { theme } from '../../theme';
 
 export function Groups() {
-  return (
-    <View style={styles.container}>
-      {/* <Text style={{color: theme.COLORS.GRAY_100}}> Groups Component</Text> */}
-    </View>
-  );
+    return (
+        <View style={styles.container}>
+            <Header />
+        </View>
+    );
 }
