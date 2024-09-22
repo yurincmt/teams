@@ -6,7 +6,7 @@ import { theme } from '../../theme';
 export function Groups() {
   return (
     <View style={styles.container}>
-      <Text style={{color: theme.COLORS.GRAY_100}}> Groups Component</Text>
+      {/* <Text style={{color: theme.COLORS.GRAY_100}}> Groups Component</Text> */}
     </View>
   );
 }
