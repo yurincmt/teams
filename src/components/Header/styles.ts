@@ -1,4 +1,6 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, View } from "react-native";
+import { theme } from "../../theme";
+import { CaretLeft } from "phosphor-react-native";
 
 
 export const styles = StyleSheet.create({
@@ -11,5 +13,11 @@ export const styles = StyleSheet.create({
     logo: {
         width: 46,
         height: 55
+    },
+    backButton: {
+        flex: 1
+    },
+    backIcon: {
+        color: theme.COLORS.WHITE
     }
 })
