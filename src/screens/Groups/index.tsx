@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { View, FlatList } from 'react-native';
 
+import { styles } from './style';
 import { Header } from '../../components/Header';
 import { Highlight } from '../../components/Highlight';
-import { styles } from './style';
 import { GroupCard } from '../../components/GroupCard';
 import { ListEmpty } from '../../components/ListEmpty';
+import { Button } from '../../components/Button';
 
 export function Groups() {
 
@@ -32,6 +33,7 @@ export function Groups() {
                 }
             />
 
+            <Button title="Criar uma nova turma"/>
         </View>
     );
 }

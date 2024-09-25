@@ -1,5 +1,5 @@
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from "@expo-google-fonts/roboto";
-import { StatusBar, Modal } from "react-native";
+import { StatusBar } from "react-native";
 import { ThemeProvider } from "styled-components";
 
 import { Groups } from "./src/screens/Groups";
