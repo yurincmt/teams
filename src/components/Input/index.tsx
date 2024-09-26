@@ -4,12 +4,14 @@ import { theme } from "../../theme";
 
 
 export function Input({...rest}: TextInputProps) {
+    const {COLORS} = theme;
+
     return (
         <TextInput
-            style={styles.container}
             {...rest}
+            style={styles.container}
             placeholder="Nome da turma"
-            placeholderTextColor={theme.COLORS.GRAY_300}
+            placeholderTextColor={COLORS.GRAY_300}
         />
     );
 }

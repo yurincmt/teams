@@ -12,6 +12,7 @@ type Props = {
 export function Header({ showBackButton=false }: Props) {
     return (
         <View style={styles.container}>
+
             { showBackButton &&
                 <TouchableOpacity style={styles.backButton}>
                     <CaretLeft size={32} color={theme.COLORS.WHITE}/>
@@ -21,7 +22,8 @@ export function Header({ showBackButton=false }: Props) {
             <Image
                 width={styles.logo.width}
                 height={styles.logo.height}
-                source={logoImg}/>
+                source={logoImg}
+            />
         </View>
     );
 }
