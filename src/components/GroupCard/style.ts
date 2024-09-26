@@ -3,7 +3,7 @@ import { theme } from "../../theme";
 
 export const styles = StyleSheet.create({
     container: {
-        // width: ,
+        width: '100%',
         height: 90,
 
         backgroundColor: theme.COLORS.GRAY_500,
@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
 
         padding: 24,
-        margin: 12
+        marginBottom: 12
     },
     title: {
         fontSize: theme.FONT_SIZE.MD,

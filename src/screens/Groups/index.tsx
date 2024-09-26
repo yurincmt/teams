@@ -10,7 +10,7 @@ import { Button } from '../../components/Button';
 
 export function Groups() {
 
-    const [groups, setGroups] = useState<string[]>([]);
+    const [groups, setGroups] = useState<string[]>(['Nome da turma', 'Nome do groups']);
     
     return (
         <View style={styles.container}>

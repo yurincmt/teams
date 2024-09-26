@@ -8,7 +8,7 @@ type Props = {
 
 export function Highlight({title, subtitle}: Props) {
     return (
-        <View>
+        <View style={styles.container}>
             <Text style={styles.title}>
                 {title}
             </Text>
