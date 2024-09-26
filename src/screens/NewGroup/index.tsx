@@ -3,6 +3,7 @@ import { View } from "react-native";
 
 import { styles } from "./style";
 
+import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
 import { Highlight } from "../../components/Highlight";
@@ -24,6 +25,8 @@ export function NewGroup() {
                     title="Nova turma"
                     subtitle="crie a turma para adicionar pessoas"
                 />
+
+                <Input />
 
                 <Button
                     title="Criar"
