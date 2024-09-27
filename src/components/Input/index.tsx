@@ -10,7 +10,6 @@ export function Input({...rest}: TextInputProps) {
         <TextInput
             {...rest}
             style={styles.container}
-            placeholder="Nome da turma"
             placeholderTextColor={COLORS.GRAY_300}
         />
     );
