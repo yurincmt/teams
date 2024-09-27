@@ -23,7 +23,8 @@ export function Players() {
                 placeholder="Nome do participante"
             />
 
-            <ButtonIcon type="Secondary"/>
+            <ButtonIcon icon="add"/>
+            <ButtonIcon icon="close"/>
         </View>
     );
 }
