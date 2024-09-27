@@ -5,6 +5,7 @@ import { Header } from "../../components/Header";
 import { Highlight } from "../../components/Highlight";
 import { Input } from "../../components/Input";
 import { ButtonIcon } from "../../components/ButtonIcon";
+import { ButtonFilter } from "../../components/ButtonFilter";
 
 export function Players() {
     return (
@@ -23,8 +24,9 @@ export function Players() {
                 placeholder="Nome do participante"
             />
 
-            <ButtonIcon icon="add"/>
-            <ButtonIcon icon="close"/>
+            <ButtonFilter title="Time B" 
+                isActive={true}
+            />
         </View>
     );
 }
