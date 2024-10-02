@@ -1,4 +1,5 @@
-import { View } from "react-native";
+import { useState } from "react";
+import { View, Text, FlatList } from "react-native";
 import { styles } from "./styles";
 
 import { Header } from "../../components/Header";
@@ -8,6 +9,10 @@ import { ButtonIcon } from "../../components/ButtonIcon";
 import { ButtonFilter } from "../../components/ButtonFilter";
 
 export function Players() {
+    const [teams, setTeams] = useState<string[]>(['Time A', 'Time B', 'Time C', 'Time D', 'Time E'])
+    const [team, setTeam] = useState<string>()
+    const [players, setPlayers] = useState<string[]>(['Yuri', 'Allana'])
+
     return (
         <View style={styles.container}>
 
@@ -24,9 +29,25 @@ export function Players() {
                 placeholder="Nome do participante"
             />
 
-            <ButtonFilter title="Time B" 
-                isActive={true}
-            />
+            <View style={styles.headerList}>
+
+                <FlatList
+                    data={teams}
+                    keyExtractor={item => item}
+                    renderItem={({item}) =>(
+                        <ButtonFilter title={item}
+                        isActive={item === team}
+                        onPress={() => setTeam(item)}
+                        />
+                    )}
+                    horizontal
+                />
+                
+                <Text style={styles.playersQty}>
+                    {players.length}
+                </Text>
+            </View>
+
         </View>
     );
 }
