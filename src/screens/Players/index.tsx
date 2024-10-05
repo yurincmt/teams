@@ -10,8 +10,8 @@ import { ButtonFilter } from "../../components/ButtonFilter";
 
 export function Players() {
     const [teams, setTeams] = useState<string[]>(['Time A', 'Time B', 'Time C', 'Time D', 'Time E'])
-    const [team, setTeam] = useState<string>()
     const [players, setPlayers] = useState<string[]>(['Yuri', 'Allana'])
+    const [selectedTeam, setSelectedTeam] = useState<string>()
 
     return (
         <View style={styles.container}>
@@ -34,10 +34,11 @@ export function Players() {
                 <FlatList
                     data={teams}
                     keyExtractor={item => item}
-                    renderItem={({item}) =>(
-                        <ButtonFilter title={item}
-                        isActive={item === team}
-                        onPress={() => setTeam(item)}
+                    renderItem={({item}) => (
+                        <ButtonFilter
+                            title={item}
+                            isActive={item === selectedTeam}
+                            onPress={() => setSelectedTeam(item)}
                         />
                     )}
                     horizontal
