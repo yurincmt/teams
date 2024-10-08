@@ -19,7 +19,7 @@ export function ButtonIcon({icon = 'home', type = 'primary', ...rest}: Props) {
 
             <MaterialIcons
                 name={icon}
-                size={32}
+                size={24}
                 color={color}
             />
 
