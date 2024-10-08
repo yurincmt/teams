@@ -19,5 +19,14 @@ export const styles = StyleSheet.create({
         fontSize: theme.FONT_SIZE.SM,
         fontFamily:theme.FONT_FAMILY.BOLD,
         color: theme.COLORS.GRAY_200       
+    },
+    form: {
+        backgroundColor: theme.COLORS.GRAY_700,
+        borderRadius: 6,
+        width: '100%',
+        height: 56,
+        
+        flexDirection: 'row',
+        justifyContent: 'center',
     }
 })

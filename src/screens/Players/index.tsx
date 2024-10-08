@@ -28,9 +28,15 @@ export function Players() {
                 subtitle="adicione a galera e separe os times"
             />
 
-            <Input
-                placeholder="Nome do participante"
-            />
+            <View style={styles.form}>
+                <Input
+                    placeholder="Nome do participante"
+                />
+
+                <ButtonIcon
+                    icon="add"
+                />
+            </View>
 
             <View style={styles.headerList}>
 
