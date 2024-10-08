@@ -9,8 +9,8 @@ type Props = TouchableOpacityProps & {
     type?: ButtonIconStyleProps;                 // argumento opcional que especifica o tipo do botão (primário(green) ou secundário(red))
 }
 
-export function ButtonIcon({icon = 'home', type = 'Primary', ...rest}: Props) {
-    const color = type === 'Primary' ? theme.COLORS.GREEN_500 : theme.COLORS.RED;
+export function ButtonIcon({icon = 'home', type = 'primary', ...rest}: Props) {
+    const color = type === 'primary' ? theme.COLORS.GREEN_500 : theme.COLORS.RED;
 
     return (
         <TouchableOpacity
