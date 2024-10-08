@@ -7,10 +7,11 @@ import { Highlight } from "../../components/Highlight";
 import { Input } from "../../components/Input";
 import { ButtonIcon } from "../../components/ButtonIcon";
 import { ButtonFilter } from "../../components/ButtonFilter";
+import { PlayerCard } from "../../components/PlayerCard";
 
 export function Players() {
     const [teams, setTeams] = useState<string[]>(['Time A', 'Time B', 'Time C', 'Time D', 'Time E'])
-    const [players, setPlayers] = useState<string[]>(['Yuri', 'Allana'])
+    const [players, setPlayers] = useState<string[]>(['Yuri', 'Allana', 'José'])
     const [selectedTeam, setSelectedTeam] = useState<string>()
 
     return (
@@ -48,6 +49,17 @@ export function Players() {
                     {players.length}
                 </Text>
             </View>
+
+            <FlatList
+                data={players}
+                keyExtractor={item => item}
+                renderItem={({item}) => (
+                    <PlayerCard
+                        name={item}
+                        onRemove={() => {}}
+                    />
+                )}
+            />
 
         </View>
     );
